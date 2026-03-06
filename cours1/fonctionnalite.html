@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinTrack — Fonctionnalités</title>
+  <meta name="description" content="Découvrez toutes les fonctionnalités FinTrack : suivi automatique, analyses IA, sécurité bancaire et bien plus pour maîtriser vos finances.">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="fonctionnalite.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <div class="brand-logo">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+          <span class="brand-name">FinTrack</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="nav">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link active" href="fonctionnalite.html">Fonctionnalités</a></li>
+            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex gap-2 align-items-center">
+          <a href="#" class="btn btn-ghost">Connexion</a>
+          <a href="#" class="btn btn-primary-custom">S'inscrire <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="features-hero">
+      <div class="hero-bg-blur blob-1"></div>
+      <div class="hero-bg-blur blob-2"></div>
+
+      <div class="container text-center">
+        <div class="badge-pill mb-4">
+          <i class="bi bi-grid-3x3-gap me-2"></i> 12 fonctionnalités incluses dans le plan gratuit
+        </div>
+        <h1 class="hero-title">
+          Tout ce dont vous avez besoin<br>pour gérer votre <span class="text-gradient">argent</span>
+        </h1>
+        <p class="hero-subtitle mx-auto mt-4">
+          FinTrack simplifie votre gestion financière grâce à des outils puissants, intuitifs et sécurisés.
+        </p>
+        <div class="mt-5 d-flex gap-3 justify-content-center flex-wrap">
+          <a href="#features" class="btn btn-primary-custom btn-lg">
+            Explorer les fonctionnalités <i class="bi bi-arrow-down ms-2"></i>
+          </a>
+          <a href="tarifs.html" class="btn btn-ghost btn-lg">Voir les tarifs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORY TABS ===================== -->
+    <section class="section-tabs" id="features">
+      <div class="container">
+        <div class="tabs-nav d-flex justify-content-center flex-wrap gap-2 mb-5">
+          <button class="tab-btn active" onclick="filterCards('all', this)">Tout voir</button>
+          <button class="tab-btn" onclick="filterCards('budget', this)">Budget</button>
+          <button class="tab-btn" onclick="filterCards('analyse', this)">Analyse</button>
+          <button class="tab-btn" onclick="filterCards('securite', this)">Sécurité</button>
+          <button class="tab-btn" onclick="filterCards('mobile', this)">Mobile</button>
+        </div>
+
+        <div class="row g-4" id="featuresGrid">
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="budget">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-credit-card-2-front"></i>
+              </div>
+              <div class="card-tag">Budget</div>
+              <h4>Comptes connectés</h4>
+              <p>Liez toutes vos banques et cartes en temps réel dans une seule interface unifiée.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="analyse">
+            <div class="feature-card featured">
+              <div class="featured-badge">IA</div>
+              <div class="icon-box">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <div class="card-tag">Analyse</div>
+              <h4>Analyses intelligentes</h4>
+              <p>Graphiques automatiques générés par l'IA pour comprendre vos habitudes financières.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="analyse">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-tags"></i>
+              </div>
+              <div class="card-tag">Analyse</div>
+              <h4>Catégorisation auto</h4>
+              <p>Vos dépenses classées automatiquement en temps réel grâce à l'intelligence artificielle.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="budget">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-bell"></i>
+              </div>
+              <div class="card-tag">Budget</div>
+              <h4>Alertes budgets</h4>
+              <p>Recevez des notifications personnalisées quand vous approchez ou dépassez vos limites.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="securite">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <div class="card-tag">Sécurité</div>
+              <h4>Sécurité bancaire</h4>
+              <p>Chiffrement AES-256 et protection de niveau entreprise pour toutes vos données.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="analyse">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </div>
+              <div class="card-tag">Analyse</div>
+              <h4>Rapports exportables</h4>
+              <p>Exportez vos finances en PDF ou Excel en un clic pour vos déclarations ou votre comptable.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="budget">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="card-tag">Budget</div>
+              <h4>Objectifs d'épargne</h4>
+              <p>Définissez vos objectifs financiers et suivez votre progression semaine après semaine.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="mobile">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-phone"></i>
+              </div>
+              <div class="card-tag">Mobile</div>
+              <h4>Application mobile</h4>
+              <p>iOS et Android — accédez à votre tableau de bord partout, en temps réel.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 card-item" data-cat="securite">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="bi bi-key"></i>
+              </div>
+              <div class="card-tag">Sécurité</div>
+              <h4>Double authentification</h4>
+              <p>Protégez votre compte avec une authentification à deux facteurs (2FA) activable en un clic.</p>
+              <a href="#" class="feature-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOWCASE 1 ===================== -->
+    <section class="section-showcase">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-5">
+            <span class="section-tag">Dashboard temps réel</span>
+            <h2 class="section-title mt-3">Visualisez vos finances<br>en temps réel</h2>
+            <p class="text-secondary mt-3">
+              Suivez vos revenus, dépenses et économies avec des dashboards modernes et interactifs.
+              Toutes vos données synchronisées, en permanence.
+            </p>
+            <ul class="check-list mt-4">
+              <li><i class="bi bi-check-circle-fill"></i> Solde consolidé de tous vos comptes</li>
+              <li><i class="bi bi-check-circle-fill"></i> Transactions en temps réel</li>
+              <li><i class="bi bi-check-circle-fill"></i> Graphiques de tendance mensuels</li>
+              <li><i class="bi bi-check-circle-fill"></i> Indicateurs personnalisables</li>
+            </ul>
+            <a href="tarifs.html" class="btn btn-primary-custom mt-4">Voir les offres</a>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="showcase-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80"
+                class="img-fluid"
+                alt="Dashboard FinTrack temps réel">
+              <div class="showcase-float">
+                <i class="bi bi-arrow-up-right text-success me-2"></i>
+                <div>
+                  <small class="d-block text-muted">Ce mois</small>
+                  <strong>+18% d'épargne</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS STRIP ===================== -->
+    <section class="section-stats">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-lg-3 col-6">
+            <div class="stat-block">
+              <strong class="stat-number">+120K</strong>
+              <span class="stat-label">Utilisateurs actifs</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-block">
+              <strong class="stat-number">300+</strong>
+              <span class="stat-label">Banques compatibles</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-block">
+              <strong class="stat-number">4.9★</strong>
+              <span class="stat-label">Note App Store</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-block">
+              <strong class="stat-number">99.9%</strong>
+              <span class="stat-label">Disponibilité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOWCASE 2 ===================== -->
+    <section class="section-showcase section-showcase-alt">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-7 order-lg-1">
+            <div class="showcase-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1556741533-974f8e62a92d?w=900&q=80"
+                class="img-fluid"
+                alt="Analyses FinTrack">
+              <div class="showcase-float showcase-float-left">
+                <i class="bi bi-cpu text-primary me-2 fs-5"></i>
+                <div>
+                  <small class="d-block text-muted">IA activée</small>
+                  <strong>Prévision sur 3 mois</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-lg-2">
+            <span class="section-tag">Intelligence artificielle</span>
+            <h2 class="section-title mt-3">Prenez de meilleures décisions financières</h2>
+            <p class="text-secondary mt-3">
+              Grâce aux prévisions et analyses IA, anticipez vos finances à 3 mois et optimisez votre budget avant d'avoir des surprises.
+            </p>
+            <ul class="check-list mt-4">
+              <li><i class="bi bi-check-circle-fill"></i> Prévisions basées sur vos habitudes</li>
+              <li><i class="bi bi-check-circle-fill"></i> Détection des dépenses inhabituelles</li>
+              <li><i class="bi bi-check-circle-fill"></i> Conseils personnalisés chaque semaine</li>
+              <li><i class="bi bi-check-circle-fill"></i> Score financier mis à jour en temps réel</li>
+            </ul>
+            <a href="tarifs.html" class="btn btn-primary-custom mt-4">Essayer gratuitement</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECURITE BLOCK ===================== -->
+    <section class="section-security">
+      <div class="container">
+        <div class="security-block">
+          <div class="security-bg-circle"></div>
+          <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6">
+              <span class="section-tag section-tag-light">Sécurité</span>
+              <h2 class="section-title mt-3" style="color:white">Vos données,<br>protégées comme en banque</h2>
+              <p class="mt-3" style="color:rgba(255,255,255,0.75)">
+                FinTrack applique les standards de sécurité les plus exigeants pour que vous puissiez gérer vos finances en toute sérénité.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="security-item">
+                    <i class="bi bi-shield-lock-fill"></i>
+                    <h6>Chiffrement AES-256</h6>
+                    <p>Standard bancaire pour toutes vos données</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="security-item">
+                    <i class="bi bi-key-fill"></i>
+                    <h6>Double authentification</h6>
+                    <p>2FA disponible sur tous les comptes</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="security-item">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <h6>Conforme RGPD</h6>
+                    <p>Vos données restent en Europe</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="security-item">
+                    <i class="bi bi-eye-slash-fill"></i>
+                    <h6>Zéro revente</h6>
+                    <p>Vos données ne sont jamais vendues</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-block">
+          <div class="cta-bg-circle"></div>
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <h2 class="cta-title fw-bold">
+                Essayez FinTrack gratuitement
+              </h2>
+              <p class="cta-sub mt-3">
+                Aucune carte requise · Setup en 2 minutes · Résiliation à tout moment.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <a href="#" class="btn btn-light btn-lg px-4">
+                Créer mon compte <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+
+      <div class="row gy-4 mb-5">
+
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <div class="brand-logo brand-logo-sm">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <span class="brand-name">FinTrack</span>
+          </a>
+          <p class="footer-desc">
+            La solution intelligente pour gérer vos finances personnelles et atteindre vos objectifs.
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <h6 class="footer-heading">Produit</h6>
+          <ul class="footer-links">
+            <li><a href="fonctionnalite.html">Fonctionnalités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="#">Sécurité</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <h6 class="footer-heading">Entreprise</h6>
+          <ul class="footer-links">
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="#">Carrières</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="small text-muted mb-3">Recevez nos conseils financiers chaque semaine.</p>
+          <div class="newsletter-form d-flex gap-2">
+            <input type="email" class="form-control" placeholder="votre@email.com" aria-label="Adresse e-mail newsletter">
+            <button class="btn btn-primary-custom">OK</button>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3">
+        <p class="mb-0 small text-muted">© 2026 FinTrack — Tous droits réservés</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="small text-muted text-decoration-none">Mentions légales</a>
+          <a href="#" class="small text-muted text-decoration-none">Confidentialité</a>
+          <a href="#" class="small text-muted text-decoration-none">CGU</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .stat-block, .security-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Category filter
+    function filterCards(cat, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      document.querySelectorAll('.card-item').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+          card.style.animation = 'fadeIn 0.4s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

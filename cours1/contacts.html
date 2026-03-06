@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinTrack — Contact</title>
+  <meta name="description" content="Contactez l'équipe FinTrack pour toute question, demande de démo ou support technique. Réponse garantie sous 24h.">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="contacts.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <div class="brand-logo">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+          <span class="brand-name">FinTrack</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="nav">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="fonctionnalite.html">Fonctionnalités</a></li>
+            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex gap-2 align-items-center">
+          <a href="#" class="btn btn-ghost">Connexion</a>
+          <a href="#" class="btn btn-primary-custom">S'inscrire <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="contact-hero">
+      <div class="hero-bg-blur blob-1"></div>
+      <div class="hero-bg-blur blob-2"></div>
+
+      <div class="container text-center">
+        <div class="badge-pill mb-4">
+          <i class="bi bi-headset me-2"></i> Support disponible lun–ven · 9h–18h
+        </div>
+        <h1 class="hero-title">
+          On est là pour <span class="text-gradient">vous aider</span>
+        </h1>
+        <p class="hero-subtitle mx-auto mt-4">
+          Une question, un problème ou une suggestion ? Notre équipe vous répond sous 24h.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== INFO CARDS ===================== -->
+    <section class="section-info">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <h5>Email</h5>
+              <p>support@fintrack.fr</p>
+              <span class="info-badge">Réponse sous 24h</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <h5>Chat en direct</h5>
+              <p>Disponible lun–ven</p>
+              <span class="info-badge">9h – 18h (CET)</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h5>Adresse</h5>
+              <p>12 rue de Rivoli</p>
+              <span class="info-badge">75001 Paris, France</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <h5>Téléphone</h5>
+              <p>+33 1 23 45 67 89</p>
+              <span class="info-badge">Lun–Ven 9h–18h</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ STRIP ===================== -->
+    <div class="faq-strip">
+      <div class="container text-center">
+        <i class="bi bi-lightbulb me-2"></i>
+        Vous cherchez une réponse rapide ? Consultez notre
+        <a href="#">Centre d'aide</a> ou notre <a href="tarifs.html">FAQ</a>.
+      </div>
+    </div>
+
+    <!-- ===================== FORM + SIDEBAR ===================== -->
+    <section class="form-section">
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+
+          <!-- FORM -->
+          <div class="col-lg-7">
+            <div class="form-card">
+
+              <span class="section-tag mb-3 d-inline-block">Formulaire de contact</span>
+              <h2>Envoyez-nous un message</h2>
+              <p class="subtitle mt-1">Tous les champs marqués d'un * sont obligatoires.</p>
+
+              <div id="successMsg" class="success-msg">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Votre message a bien été envoyé ! On vous répond très vite.
+              </div>
+
+              <div class="row g-3 mt-1">
+
+                <div class="col-md-6">
+                  <label class="form-label" for="prenom">Prénom *</label>
+                  <input type="text" id="prenom" class="form-control" placeholder="Jean" autocomplete="given-name">
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="nom">Nom *</label>
+                  <input type="text" id="nom" class="form-control" placeholder="Dupont" autocomplete="family-name">
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="email">Email *</label>
+                  <input type="email" id="email" class="form-control" placeholder="jean.dupont@email.com" autocomplete="email">
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="sujet">Sujet *</label>
+                  <select id="sujet" class="form-select">
+                    <option value="" disabled selected>Choisissez un sujet</option>
+                    <option>Question sur mon compte</option>
+                    <option>Problème technique</option>
+                    <option>Facturation &amp; abonnement</option>
+                    <option>Demande de démo</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="message">Message *</label>
+                  <textarea id="message" class="form-control" placeholder="Décrivez votre demande..."></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rgpd">
+                    <label class="form-check-label small text-muted" for="rgpd">
+                      J'accepte que mes données soient utilisées pour traiter ma demande. <a href="#" class="text-primary">Politique de confidentialité</a>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-1">
+                  <button class="btn btn-primary-custom w-100 btn-lg" onclick="handleSubmit()">
+                    Envoyer le message <i class="bi bi-send ms-2"></i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <div class="col-lg-4">
+
+            <div class="sidebar-block mb-4">
+              <span class="section-tag mb-3 d-inline-block">Réponse rapide</span>
+              <h3 class="sidebar-title">Avant de nous écrire…</h3>
+              <p class="text-muted small mt-2">
+                La majorité des questions trouvent leur réponse dans notre documentation.
+              </p>
+              <ul class="sidebar-links mt-3">
+                <li>
+                  <a href="#"><i class="bi bi-book me-2 text-primary"></i> Guide de démarrage</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-question-circle me-2 text-primary"></i> Questions fréquentes</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-credit-card me-2 text-primary"></i> Facturation & abonnements</a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-shield-lock me-2 text-primary"></i> Sécurité & confidentialité</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block hours-block">
+              <h5 class="sidebar-title"><i class="bi bi-clock me-2 text-primary"></i> Horaires du support</h5>
+              <ul class="hours-list mt-3">
+                <li>
+                  <span>Lun – Ven</span>
+                  <strong>9h00 – 18h00</strong>
+                </li>
+                <li>
+                  <span>Samedi</span>
+                  <strong>10h00 – 14h00</strong>
+                </li>
+                <li>
+                  <span>Dimanche</span>
+                  <strong class="text-muted">Fermé</strong>
+                </li>
+              </ul>
+              <div class="status-badge mt-3">
+                <span class="status-dot"></span> Support en ligne actuellement
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-block">
+          <div class="cta-bg-circle"></div>
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <h2 class="cta-title fw-bold">
+                Pas encore inscrit ?
+              </h2>
+              <p class="cta-sub mt-3">
+                Essayez FinTrack gratuitement — sans carte bancaire, sans engagement.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <a href="index.html" class="btn btn-light btn-lg px-4">
+                Créer mon compte <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+
+      <div class="row gy-4 mb-5">
+
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <div class="brand-logo brand-logo-sm">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <span class="brand-name">FinTrack</span>
+          </a>
+          <p class="footer-desc">
+            La solution intelligente pour gérer vos finances personnelles et atteindre vos objectifs.
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <h6 class="footer-heading">Produit</h6>
+          <ul class="footer-links">
+            <li><a href="fonctionnalite.html">Fonctionnalités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="#">Sécurité</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-sm-6">
+          <h6 class="footer-heading">Entreprise</h6>
+          <ul class="footer-links">
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="#">Carrières</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="small text-muted mb-3">Recevez nos conseils financiers chaque semaine.</p>
+          <div class="newsletter-form d-flex gap-2">
+            <input type="email" class="form-control" placeholder="votre@email.com" aria-label="Adresse e-mail newsletter">
+            <button class="btn btn-primary-custom">OK</button>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3">
+        <p class="mb-0 small text-muted">© 2026 FinTrack — Tous droits réservés</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="small text-muted text-decoration-none">Mentions légales</a>
+          <a href="#" class="small text-muted text-decoration-none">Confidentialité</a>
+          <a href="#" class="small text-muted text-decoration-none">CGU</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.info-card, .form-card, .sidebar-block').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Submit handler
+    function handleSubmit() {
+      const msg = document.getElementById('successMsg');
+      msg.style.display = 'block';
+      window.scrollTo({ top: document.querySelector('.form-card').offsetTop - 100, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

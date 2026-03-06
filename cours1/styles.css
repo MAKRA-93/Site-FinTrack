@@ -1,0 +1,83 @@
+body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* NAVBAR */
+    header {
+      backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.8);
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+      transition: 0.3s;
+    }
+
+    /* CAROUSEL */
+    .carousel-item {
+      height: 90vh;
+      position: relative;
+    }
+
+    .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+
+    .carousel-caption {
+      bottom: 25%;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    /* MARKETING */
+    .marketing {
+      padding: 80px 0;
+    }
+
+    .marketing h2 {
+      margin-top: 20px;
+    }
+
+    .marketing .col-lg-4 {
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.03);
+      transition: 0.3s;
+    }
+
+    .marketing .col-lg-4:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.06);
+    }
+
+    /* FEATURETTES */
+    .featurette-divider {
+      margin: 5rem 0;
+    }
+
+    .featurette-heading {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    /* HERO CTA */
+    .hero-cta {
+      background: linear-gradient(90deg, #2563eb, #1d4ed8);
+      padding: 80px 20px;
+      border-radius: 30px;
+      text-align: center;
+      margin: 80px auto;
+    }
+
+    /* FOOTER */
+    footer {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+    }
